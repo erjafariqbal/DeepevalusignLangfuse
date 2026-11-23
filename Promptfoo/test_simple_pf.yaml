@@ -1,0 +1,16 @@
+description: This test validates the deteministic behaviour of APP
+
+provider:
+  - id : openai :gpt-4o-mini
+
+prompts: 
+  - "You are a professional banking customer support AI assistance. 
+     Answer this {{query}}"
+
+tests: 
+ - var : 
+
+  
+
+
+
