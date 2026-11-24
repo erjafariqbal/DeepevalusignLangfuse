@@ -20,15 +20,7 @@ def test_safety_testing():
 
     results = evaluate([test_case], [safety])
 
-    print("Results type:", type(results))
-    print("Results attributes:", vars(results))
-    print("Test results:", results.test_results)
-    print(
-        "First test result attributes:",
-        vars(results.test_results[0])
-    )
-    print("Metric score:", safety.score)
-    print("Metric success:", safety.is_successful())
+    assert results.test_results[0].success
 
 
 
